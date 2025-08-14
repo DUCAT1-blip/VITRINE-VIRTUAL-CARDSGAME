@@ -1,0 +1,255 @@
+body
+{
+    font-family: "Bebas Neue", sans-serif;
+    background-color: #141414; /* Cor de fundo do body */
+    background-image: url('../img/card/fundo/fundo.jpg'); /* Imagem de fundo do body */
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-attachment: fixed; /* Faz a imagem de fundo ficar fixa */
+    background-repeat: no-repeat; /* Não repete a imagem de fundo */
+    color: #ffffff; /* Cor do texto padrão */
+}
+.cabecalho {
+    display: flex;
+    justify-content: center; /* Centraliza o cabeçalho */
+    align-items: center; /* Alinha os itens verticalmente */
+    background-color: #141414; /* Cor de fundo do cabeçalho */
+    padding: 20px; /* Espaçamento interno do cabeçalho */
+    border-bottom: 2px solid #ffcb75; /* Borda dourada na parte inferior do cabeçalho */
+}
+.cabecalho img {
+    background-color: #141414;
+    height: 126px; /* Define a altura da imagem como 69 pixels */
+    width: auto;
+    display: flex;
+    justify-content: right; /* Alinha os itens à direita */
+    padding: 10px; /* Espaçamento interno da imagem */
+}
+.container{
+    max-width: 1171px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px; /* Bordas arredondadas */
+    margin-top: 20px; /* Espaçamento superior */
+    border: solid 2px #ffcb75; /* Borda dourada */
+    background-color: #141414; /* Cor de fundo da container */
+    position: relative; /* Necessário para o efeito de transformação */
+    overflow: hidden; /* Garante que os elementos internos não transbordem */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8); /* Sombra suave para a container */
+
+}
+.container .produtos{
+    color: #ffcb75;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 32px;
+    line-height: 32px;
+    letter-spacing: 8px;
+    text-align: center;
+}
+
+.container .filtros
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+}
+
+.container .categorias-cartas, .container .preco-carta
+{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 40%;
+}
+
+.container label{
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #ffcb75;
+}
+
+.container .categorias-cartas select, .container .preco-carta input{
+    padding: 16px 13px;
+    border-radius: 10px;
+    border: 2px solid #111111;
+    color: #141414;
+    height: 52px;
+
+}
+
+.container select:focus, .container input:focus, .container select:focus-visible, .container input:focus-visible{
+    outline: none;
+}
+.container .categoria select{
+    appearance: none;
+    background: url('../img/card/fundo/filtro.png') 97% center no-repeat;
+    background-size: 15px;
+}
+
+.container .filtros .bnt-filtrar{
+    border: none;
+    border-radius: 5%;
+    background-color: #ffcb75;
+    color: #111111;
+    padding: 16px 32px;
+    font-weight: 500;
+    align-self: end;
+    width: 177px;
+    height: 52px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+.carta img {
+    width: 260px; /* Ajuste o tamanho desejado */
+    height: auto; /* Mantém a proporção da imagem */
+}
+.container .filtros .bnt-filtrar:hover{
+    background-color: #141414;
+    color: #ffcb75;
+}
+.container .ver-todas
+{
+    background-color: #ffcb75;
+    color: #111111;
+    padding: 16px 32px;
+    border-radius: 5%;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+.container .ver-todas:hover{
+    background-color: #141414;
+    color: #ffcb75;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8); /* Adiciona sombra ao botão ao passar o mouse */
+    transform: scale(1.05); /* Aumenta o tamanho do botão ao passar o mouse */
+}
+.container .ver-todas a{
+    color: #111111; /* Cor do texto do botão */
+    text-decoration: none; /* Remove o sublinhado do link */
+    display: block; /* Faz o link ocupar todo o espaço do botão */
+    text-align: center; /* Centraliza o texto dentro do link */
+}
+.container .cartas
+{
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    margin-top: 22px;
+    justify-content: center;
+    padding: 0 20px; /* Adiciona espaçamento lateral */
+}
+.container .cartas img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px; /* Bordas arredondadas para as imagens */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave para as imagens */
+    transition: transform 0.3s; /* Adiciona uma transição suave para as imagens */
+}
+.container .cartas img:hover {
+    transform: scale(1.05); /* Aumenta o tamanho da imagem ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Aumenta a sombra ao passar o mouse */
+}
+.container .cartas .carta{
+    max-width: 300px;
+    background-color: #111111;
+    color: #ffcb75;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8);
+    transition: 0.3s;
+}
+.container .carta img{
+    width: 100%;
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.container .carta .informacoes{
+    background-color: #141414;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.container .informacoes .nome-personagem{
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffcb75; /* Cor do nome do personagem */
+}
+.container .carta .informacoes .categoria{
+    color: #ffcb75;
+    font-weight: 700;
+}
+.container .carta .informacoes .preco{
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #4D8e5c;
+    display: flex;
+}
+.container .carta .informacoes .bnt-comprar{
+    color: #111111;
+    background-color: #ffcb75;
+    padding: 16px;
+    border-radius: 4px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    width: 100%;
+}
+.container .carta .informacoes .bnt-comprar:hover{
+    background-color: #141414;
+    color: #ffcb75;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8); /* Adiciona sombra ao botão ao passar o mouse */
+    transform: scale(1.05); /* Aumenta o tamanho do botão ao passar o mouse */
+}
+.container .paginas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px; /* Espaçamento superior */
+}
+.container .paginas button{
+    background-color: #ffcb75;
+    color: #111111;
+    padding: 16px 32px;
+    border-radius: 5%;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+.container .paginas button:hover{
+    background-color: #141414;
+    color: #ffcb75;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8); /* Adiciona sombra ao botão ao passar o mouse */
+    transform: scale(1.05); /* Aumenta o tamanho do botão ao passar o mouse */
+}
+.rodape{
+    background-color: #000000;
+    color: #ffcb75;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    border-top: 2px solid #ffcb75; /* Borda dourada no topo do rodapé */
+    margin-top: 20px; /* Espaçamento superior */
+}
+.esconder {
+    display: none; /* Esconde o elemento por padrão */
+}
+.mostrar{
+    display: block; /* Mostra o elemento quando necessário */
+}

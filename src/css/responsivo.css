@@ -1,0 +1,42 @@
+@media (max-width: 1024px){
+    .container {
+        padding: 20px;
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container .filtros{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+    .cabecalho {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cabecalho .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cabecalho img{
+        width: 30%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .container .filtros .categorias-cartas, .container .filtros .preco-carta, .container .filtros .bnt-filtrar {
+        width: 65%;
+    }
+    .container .filtros .bnt-filtrar {
+        align-self: center;
+
+    }
+    .container .cartas{
+    justify-content: center;
+    }
+}
+@media (max-width: 480px){
+    .container .filtros .categorias-cartas, .container .filtros .preco-carta, .container .filtros .bnt-filtrar {
+        width: 100%;
+    }
+}

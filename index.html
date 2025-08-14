@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DRAGON BALL CARD GAME</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="src/css/estilo.css">
+<link rel="stylesheet" href="src/css/reset.css">
+<link rel="stylesheet" href="src/css/responsivo.css">
+
+  </head>
+  <body>
+    <header class="cabecalho">
+      <img src="src/img/ChatGPT Image 10 de jul. de 2025, 13_19_43.png" alt="corp" />
+    </header>
+    <main class="container">
+      <div class="ver-cartas">
+        <button class="ver-todas">Ver Todas</button>
+      </div>
+      <h1 class="produtos" style="font-family: 'Bebas Neue', sans-serif;">PRODUTOS EM DESTAQUE</h1>
+      <div class="filtros">
+        <div class="categorias-cartas">
+          <label for="categoria">Categoria</label>
+          <select id="categoria" class="categoria">
+            <option value="">Selecione uma categoria</option>
+            <option value="lendaria">Lendária</option>
+            <option value="epico">Épica</option>
+            <option value="comum">Comum</option>
+          </select>
+        </div>
+        <div class="preco-carta">
+          <label for="preco">Preço Máximo (R$)</label>
+          <input type="text" id="preco" class="preco" placeholder="Ex: 100" />
+        </div>
+        <button class="bnt-filtrar">aplicar Filtros</button>
+      </div>
+      <ul class="cartas">
+        <li class="carta" data-categoria="lendaria" data-preco="4060">
+          <img
+            src="src/img/card/LENDARIAS/Aliança Demoníaca_ Poderes Obscuros.png"
+            alt=""
+          />
+          <div class="informacoes">
+            <h2 class="nome-personagem">ALIANÇA DEMONICA</h2>
+            <span class="categoria">Categoria: LENDÁRIA</span>
+            <span class="preco">R$ 4.060,00</span>
+            <a href="https://wa.me/5543991928484?text=Olá, quero comprar essa carta!" class="bnt-comprar" target="_blank">Comprar</a>
+          </div>
+        </li>
+        <li class="carta" data-categoria="lendaria" data-preco="1930">
+          <img
+            src="src/img/card/LENDARIAS/Parceiras Improváveis_ Bulma e Chi-Chi.png"
+            alt=""
+          />
+          <div class="informacoes">
+            <h2 class="nome-personagem">PARCEIRAS IMPROVÁVEIS</h2>
+            <span class="categoria">Categoria: LENDÁRIA</span>
+            <span class="preco">R$ 1.930,00</span>
+            <a href="https://wa.me/5543991928484?text=Olá, quero comprar essa carta!" class="bnt-comprar" target="_blank">Comprar</a>
+          </div>
+        </li>
+        <li class="carta" data-categoria="lendaria" data-preco="7930">
+          <img
+            src="src/img/card/LENDARIAS/Supremacia dos Guerrreiros Supremos.png"
+            alt=""
+          />
+          <div class="informacoes">
+            <h2 class="nome-personagem">SUPREMACIA DOS GUERREIROS</h2>
+            <span class="categoria">Categoria: LENDÁRIA</span>
+            <span class="preco">R$ 7.930,00</span>
+            <a href="https://wa.me/5543991928484?text=Olá, quero comprar essa carta!" class="bnt-comprar" target="_blank">Comprar</a>
+          </div>
+        </li>
+        <li class="carta" data-categoria="epico" data-preco="930">
+          <img
+            src="src/img/card/ÉPICA/Aliança Improvável_ Força e Estratégia.png"
+            alt=""
+          />
+          <div class="informacoes">
+            <h2 class="nome-personagem">ALIANÇA IMPROVÁVEL</h2>
+            <span class="categoria">Categoria: ÉPICA</span>
+            <span class="preco">R$ 930,00</span>
+            <a href="https://wa.me/5543991928484?text=Olá, quero comprar essa carta!" class="bnt-comprar" target="_blank">Comprar</a>
+          </div>
+        </li>
+        <li class="carta" data-categoria="epico" data-preco="767">
+          <img
+            src="src/img/card/ÉPICA/Dupla Estratégica no Cosmos.png"
+            alt=""
+          />
+          <div class="informacoes">
+            <h2 class="nome-personagem">PAR PERFEITO</h2>
+            <span class="categoria">Categoria: ÉPICA</span>
+            <span class="preco">R$ 767,00</span>
+            <a href="https://wa.me/5543991928484?text=Olá, quero comprar essa carta!" class="bnt-comprar" target="_blank">Comprar</a>
+          </div>
+        </li>
+        <li class="carta" data-categoria="epico" data-preco="767">
+          <img
+            src="src/img/card/ÉPICA/Par Perfeito_ Poder e Amor.png"
+            alt=""
+          />
+          <div class="informacoes">
+            <h2 class="nome-personagem">AMOR COMPLICADO</h2>
+            <span class="categoria">Categoria: ÉPICA</span>
+            <span class="preco">R$ 767,00</span>
+            <a href="https://wa.me/5543991928484?text=Olá, quero comprar essa carta!" class="bnt-comprar" target="_blank">Comprar</a>
+          </div>
+        </li>
+        <li class="carta" data-categoria="comum" data-preco="40">
+          <img
+            src="src/img/card/COMUM/Krillin_ Guerreiro Z em Ação.png"
+            alt=""
+          />
+          <div class="informacoes">
+            <h2 class="nome-personagem">KRILLIN</h2>
+            <span class="categoria">Categoria: COMUM</span>
+            <span class="preco">R$ 40,00</span>
+            <a href="https://wa.me/5543991928484?text=Olá, quero comprar essa carta!" class="bnt-comprar" target="_blank">Comprar</a>
+          </div>
+        </li>
+        <li class="carta" data-categoria="comum" data-preco="80">
+          <img
+            src="src/img/card/COMUM/Mestre Kame em Cartão Colecionável.png"
+            alt=""
+          />
+          <div class="informacoes">
+            <h2 class="nome-personagem">MESTRE KAME</h2>
+            <span class="categoria">Categoria: COMUM</span>
+            <span class="preco">R$ 80,00</span>
+            <a href="https://wa.me/5543991928484?text=Olá, quero comprar essa carta!" class="bnt-comprar" target="_blank">Comprar</a>
+          </div>
+        </li>
+        <li class="carta" data-categoria="comum" data-preco="39">
+          <img
+            src="src/img/card/COMUM/Tenshinhan - Guerreiro Z em Ação.png"
+            alt=""
+          />
+          <div class="informacoes">
+            <h2 class="nome-personagem">TENSHINHAN</h2>
+            <span class="categoria">Categoria: COMUM</span>
+            <span class="preco">R$ 39,00</span>
+            <a href="https://wa.me/5543991928484?text=Olá, quero comprar essa carta!" class="bnt-comprar" target="_blank">Comprar</a>
+          </div>
+        </li>
+      </ul>
+      <div class="paginas">
+        <button class="pagina-anterior">Anterior</button>
+        <span class="pagina-atual">1</span>
+        <button class="pagina-proxima">Próxima</button>
+      </div>
+    </main>
+    <footer class="rodape">@2025 @DEV - DUCATI - TODOS OS DIREITOS RESERVADOS</footer>
+  </body>
+  <script src="src/js/index.js"></script>
+</html>
