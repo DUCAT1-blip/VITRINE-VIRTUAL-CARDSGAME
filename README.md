@@ -1,6 +1,5 @@
 # 🐉 E-commerce de Cartas Dragon Ball
 
-![Capa do Projeto](./assets/capa-projeto.png)
 
 ## 📖 Sobre o Projeto
 Este é um e-commerce temático de **cartas colecionáveis do universo Dragon Ball**, desenvolvido para oferecer uma experiência de compra imersiva, com filtros avançados, imagens em alta qualidade e um design inspirado na estética da série.
